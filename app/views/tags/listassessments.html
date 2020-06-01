@@ -1,0 +1,42 @@
+<table class="ui celled table">
+    <thead>
+        <tr><th>Weight</th>
+            <th>Chest</th>
+            <th>Thigh</th>
+            <th>Upper Arm</th>
+            <th>Waist</th>
+            <th>Hips</th>
+
+
+        </tr>
+    </thead>
+    <tbody>
+        #{list items:_member.assessments, as:'assess'}
+            <tr>
+                <td >
+                    ${assess.weight}
+                </td>
+                <td >
+                    ${assess.chest}
+                </td>
+                <td >
+                    ${assess.thigh}
+                </td>
+
+                <td >
+                    ${assess.upperArm}
+                </td>
+                <td>
+                    ${assess.waist}
+                </td>
+                <td>
+                    ${assess.hips}
+                </td>
+                <td>
+                    <a href="/members/${_member.id}/deleteassessment/${assess.id}" class="ui tiny red button"><i class="trash alternate icon"></i></a>
+                </td>
+
+        #{/list}
+    </tbody>
+
+</table>

@@ -1,0 +1,45 @@
+<form class="ui stacked segment form" action="/trainerdashboard/addmember" method="POST">
+    <div class="ui two column grid basic middle aligned segment">
+        <div class="column">
+            <form class="ui stacked segment form" action="/register" method="POST">
+                <h3 class="ui header">Register</h3>
+                <div class="two fields">
+                    <div class="field">
+                        <label>Full Name</label>
+                        <input placeholder="name" type="text" name="name">
+                    </div>
+                    <div class="field">
+                        <label>Address</label>
+                        <input placeholder="address" type="text" name="address">
+                    </div>
+                </div>
+                <div class="field">
+                    <label>Email</label>
+                    <input placeholder="Email" type="text" name="email">
+                </div>
+                <div class="field">
+                    <label>Password</label>
+                    <input type="password" name="password">
+                </div>
+                <div class="field">
+                    <label>Height</label>
+                    <input type="height" name="height">
+                </div>
+                <div class="field">
+                    <label>Weight</label>
+                    <input type="startingWeight" name="startingWeight">
+                </div>
+                <div class="field">
+                    <label>BMI</label>
+                    <input type="bmi" name="bmi">
+                </div>
+
+                <button class="ui blue submit button"><i class="plus icon"></i></button>
+            </form>
+        </div>
+        <div class="column">
+            <img class="ui image" src="">
+        </div>
+    </div>
+
+</form>

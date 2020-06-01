@@ -1,0 +1,21 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"dashboard"/}
+
+#{list items:members, as:'member'}
+  <section class="ui segment">
+      <div class="ui center aligned middle aligned segment">
+          <i class="user icon big"></i>
+          <h2 class="ui header">
+          ${member.name}
+          </h2>
+          <i class="heartbeat icon huge"></i>
+          Starting BMI: ${member.getBmi()}
+          <i class="user md icon huge"></i>
+          ${member.getDoctorEvaluation()}
+      </div>
+      #{addassessment member:member /}
+      #{listassessments member:member/}
+  </section>
+#{/list}
