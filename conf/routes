@@ -27,7 +27,7 @@ GET     /trainerdashboard/deletemember/{id}                 TrainerDashboard.del
 POST    /trainerdashboard/addmember                         TrainerDashboard.addMember
 
 # Ignore favicon requests
-GET     /favicon.ico                            404
+GET     /favicon.ico                                        404
 
 # Map static resources from the /app/public folder to the /public path
 GET     /public/                                             staticDir:public
